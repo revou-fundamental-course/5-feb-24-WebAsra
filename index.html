@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website Konversi Suhu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+        <p>Masuk suhu Celcius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+        <form name="form-konversi"></form>
+        <table class="Konversi">
+            <tbody>
+                <tr><td colspan="2"><label for="celcius">Celcius (°C):</label></td></tr>
+                <tr><td><input type="text" id="dalam_angka" class="dalam_teks" autofocus tabindex="1"></td></tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" title="Konversi" class="btn" tabindex="2" onclick="konversi()">Konversi</button>
+                        <button type="reset" title="Reset" class="btn" tabindex="3" onclick="reset()">Reset</button>
+                        <button type="button" title="Reverse" class="btn" tabindex="4" onclick="togglekonversi()">Reverse</button>
+                    </td>
+                </tr>
+                <tr><td colspan="2"><label for="fahrenheit">Fahrenheit (°F):</label></td></tr>
+                <tr><td><textarea id="keluar" rows="1" class="luar_teks" readonly tabindex="5"></textarea></td></tr>
+                <tr><td colspan="2">Cara kalkulasi</td></tr>
+                <tr><td><textarea id="keluar_kalkulasi" rows="1" class="luar_teks" readonly tabindex="5"></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
